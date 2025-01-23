@@ -30,7 +30,9 @@ public class PublicacionConTexto extends Publicacion{
     public String toString() {
         return "Usuario: " + getNombreUsuario()
                 + "\nID: " + this.ID
-                + "\nTexto: " + this.texto + "\n";
+                + "\nTexto: " + this.texto
+                + "\nFecha: " + getFechaPublicacion()
+                + "\nLikes: " + this.getLikes() + "\n";
     }
 
     public int randomID() {

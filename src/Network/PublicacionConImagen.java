@@ -30,6 +30,7 @@ public class PublicacionConImagen extends Publicacion {
     public String toString() {
         return "Usuario: " + getNombreUsuario()
                 + "\nTitulo: " + this.titulo
-                + "\nImagen: " + this.imagen + "\n";
+                + "\nImagen: " + this.imagen
+                + "\nFecha: " + getFechaPublicacion() + "\n";
     }
 }
