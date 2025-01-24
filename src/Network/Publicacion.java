@@ -3,18 +3,18 @@ package Network;
 import java.time.ZonedDateTime;
 
 public abstract class Publicacion {
-    private String nombreUsuario;
+    private Usuario usuario;
     private String fechaPublicacion;
     private int likes;
 
-    public Publicacion(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
+    public Publicacion(Usuario usuario) {
+        this.usuario = usuario;
         this.fechaPublicacion = generarFecha();
         this.likes = 0;
     }
 
-    public String getNombreUsuario() {
-        return nombreUsuario;
+    public Usuario getNombreUsuario() {
+        return usuario;
     }
 
     public String getFechaPublicacion() {
@@ -28,6 +28,7 @@ public abstract class Publicacion {
     public void setLikes(int likes) {
         this.likes = likes;
     }
+
 
     public String generarFecha() {
         return this.fechaPublicacion = String.valueOf(ZonedDateTime.now());

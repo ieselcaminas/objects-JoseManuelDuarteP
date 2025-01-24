@@ -4,7 +4,7 @@ public class PublicacionConImagen extends Publicacion {
     private String imagen;
     private String titulo;
 
-    public PublicacionConImagen(String nombreUsuario,String titulo,String imagen) {
+    public PublicacionConImagen(Usuario nombreUsuario,String titulo,String imagen) {
         super(nombreUsuario);
         this.titulo = titulo;
         this.imagen = imagen;
@@ -24,7 +24,7 @@ public class PublicacionConImagen extends Publicacion {
 
     @Override
     public String toString() {
-        return "Usuario: " + getNombreUsuario()
+        return "Info usuario: " + getNombreUsuario()
                 + "\nTitulo: " + this.titulo
                 + "\nImagen: " + this.imagen
                 + "\nFecha: " + this.getFechaPublicacion()

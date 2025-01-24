@@ -1,13 +1,13 @@
 package Network;
 
-public class PublicacionConTexto extends Publicacion{
+public class PublicacionConTexto extends Publicacion {
     private String texto;
-    private int ID;
+    private int id;
 
-    public PublicacionConTexto(String nombreUsuario,String texto) {
+    public PublicacionConTexto(Usuario nombreUsuario,String texto) {
         super(nombreUsuario);
         this.texto = texto;
-        this.ID = this.randomID();
+        this.id = Service.randomID();
     }
 
     public String getTexto() {
@@ -18,21 +18,20 @@ public class PublicacionConTexto extends Publicacion{
         this.texto = texto;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
     @Override
     public String toString() {
-        return "Usuario: " + getNombreUsuario()
-                + "\nID: " + this.ID
+        return "Info usuario: " + getNombreUsuario()
+                + "\nID: " + this.id
                 + "\nTexto: " + this.texto
                 + "\nFecha: " + this.getFechaPublicacion()
                 + "\nLikes: " + this.getLikes() + "\n";
     }
 
-    public int randomID() {
-        return this.ID = (int) (Math.random() * Integer.MAX_VALUE);
-    }
+
+
 
 }
