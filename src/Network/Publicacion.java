@@ -17,16 +17,8 @@ public abstract class Publicacion {
         return nombreUsuario;
     }
 
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
-    }
-
     public String getFechaPublicacion() {
         return fechaPublicacion;
-    }
-
-    public void setFechaPublicacion(String fechaPublicacion) {
-        this.fechaPublicacion = fechaPublicacion;
     }
 
     public int getLikes() {

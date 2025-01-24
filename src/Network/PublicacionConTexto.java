@@ -22,16 +22,12 @@ public class PublicacionConTexto extends Publicacion{
         return ID;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
     @Override
     public String toString() {
         return "Usuario: " + getNombreUsuario()
                 + "\nID: " + this.ID
                 + "\nTexto: " + this.texto
-                + "\nFecha: " + getFechaPublicacion()
+                + "\nFecha: " + this.getFechaPublicacion()
                 + "\nLikes: " + this.getLikes() + "\n";
     }
 

@@ -14,10 +14,6 @@ public class PublicacionConImagen extends Publicacion {
         return imagen;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
-
     public String getTitulo() {
         return titulo;
     }
@@ -31,6 +27,7 @@ public class PublicacionConImagen extends Publicacion {
         return "Usuario: " + getNombreUsuario()
                 + "\nTitulo: " + this.titulo
                 + "\nImagen: " + this.imagen
-                + "\nFecha: " + getFechaPublicacion() + "\n";
+                + "\nFecha: " + this.getFechaPublicacion()
+                + "\nLikes: " + this.getLikes() + "\n";
     }
 }
