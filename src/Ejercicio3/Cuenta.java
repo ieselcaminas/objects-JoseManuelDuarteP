@@ -39,7 +39,6 @@ public class Cuenta {
 
     public double ingresar(double cantidad) {
         if (cantidad < 0) {
-            System.out.println("Cantidad no permitida");
             return 0;
         } else {
             return this.cantidad += cantidad;
