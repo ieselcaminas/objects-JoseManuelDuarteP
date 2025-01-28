@@ -1,6 +1,6 @@
 package Trabajadores;
 
-public class Empleado {
+public abstract class Empleado {
     private String nombre;
 
     public Empleado(String nombre) {
