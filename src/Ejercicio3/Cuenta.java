@@ -25,18 +25,6 @@ public class Cuenta {
         return cantidad;
     }
 
-    public void setCantidad(double cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    @Override
-    public String toString() {
-        return "Cuenta [" +
-                "\ntitular= " + titular +
-                "\ncantidad= " + cantidad +
-                "\n}";
-    }
-
     public double ingresar(double cantidad) {
         if (cantidad < 0) {
             return 0;
@@ -51,6 +39,14 @@ public class Cuenta {
         } else {
             return this.cantidad -= cantidad;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Cuenta [" +
+                "\ntitular= " + titular +
+                "\ncantidad= " + cantidad +
+                "\n}";
     }
 
 }

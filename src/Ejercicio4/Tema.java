@@ -1,24 +1,24 @@
 package Ejercicio4;
 
 public class Tema {
-    private String nombreTema;
+    private String nombre;
 
     public Tema(String nombreTema) {
-        this.nombreTema = nombreTema;
+        this.nombre = nombreTema;
     }
 
     public String getNombreTema() {
-        return nombreTema;
+        return nombre;
     }
 
     public void setNombreTema(String nombreTema) {
-        this.nombreTema = nombreTema;
+        this.nombre = nombreTema;
     }
 
     @Override
     public String toString() {
         return "Tema{" +
-                "nombreTema='" + nombreTema + '\'' +
+                "nombreTema='" + nombre + '\'' +
                 '}';
     }
 }

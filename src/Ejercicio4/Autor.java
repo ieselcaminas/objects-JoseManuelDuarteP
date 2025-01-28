@@ -1,20 +1,20 @@
 package Ejercicio4;
 
 public class Autor {
-    private String nombreAutor;
+    private String nombre;
     private String fechaNacimiento;
 
     public Autor(String nombreAutor, String fechaNacimiento) {
-        this.nombreAutor = nombreAutor;
+        this.nombre = nombreAutor;
         this.fechaNacimiento = fechaNacimiento;
     }
 
     public String getNombreAutor() {
-        return nombreAutor;
+        return nombre;
     }
 
     public void setNombreAutor(String nombreAutor) {
-        this.nombreAutor = nombreAutor;
+        this.nombre = nombreAutor;
     }
 
     public String getFechaNacimiento() {
@@ -28,7 +28,7 @@ public class Autor {
     @Override
     public String toString() {
         return "Autor{" +
-                "nombreAutor='" + nombreAutor + '\'' +
+                "nombreAutor='" + nombre + '\'' +
                 ", fechaNacimiento='" + fechaNacimiento + '\'' +
                 '}';
     }

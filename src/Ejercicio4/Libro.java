@@ -8,11 +8,10 @@ public class Libro {
     private int paginas;
     private ArrayList<Tema> temas;
 
-    public Libro(String titulo, Autor autor, int paginas, ArrayList<Tema> temas) {
+    public Libro(String titulo, Autor autor) {
         this.titulo = titulo;
         this.autor = autor;
-        this.paginas = paginas;
-        this.temas = temas;
+        this.temas = new ArrayList<>();
     }
 
     public String getTitulo() {
@@ -43,8 +42,8 @@ public class Libro {
         return temas;
     }
 
-    public void setTemas(ArrayList<Tema> temas) {
-        this.temas = temas;
+    public void addTemas(Tema temas) {
+        this.temas.add(temas);
     }
 
     @Override

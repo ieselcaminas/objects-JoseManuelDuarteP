@@ -4,23 +4,31 @@ import java.util.ArrayList;
 
 public class MainLibro {
     public static void main(String[] args) {
-        ArrayList<Tema> temas = new ArrayList();
-        ArrayList<Autor> autores = new ArrayList();
+
         ArrayList<Libro> libros = new ArrayList();
 
-        Tema tema = new Tema("Histórico");
-        temas.add(tema);
-        tema = new Tema("Horror");
-        temas.add(tema);
-        tema = new Tema("Acción");
-        temas.add(tema);
+        Tema historico = new Tema("Histórico");
+        Tema horror = new Tema("Horror");
+        Tema accion = new Tema("Acción");
 
-        Autor autor = new Autor("Martin", "18-05-1984");
-        autores.add(autor);
-        autor = new Autor("Juan", "27-01-1996");
-        autores.add(autor);
+        Autor martin = new Autor("Martin", "18-05-1984");
+        Autor juan = new Autor("Juan", "27-01-1996");
 
-       // Libro libro = new Libro("Pájaros de acero",autores.get(1),203,temas.get(1));
+        Libro libro = new Libro("Pájaros de acero",juan);
+        libro.addTemas(historico);
+        libro.addTemas(accion);
+        libros.add(libro);
+
+        Libro libro2 = new Libro("Ananinoan",martin);
+        libro2.addTemas(horror);
+        libros.add(libro2);
+
+        for(Libro libro1: libros) {
+            System.out.println(libro1.getTitulo() + " - " + libro1.getAutor());
+            for(Tema tema: libro1.getTemas()) {
+                System.out.println(tema);
+            }
+        }
 
     }
 }
