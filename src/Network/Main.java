@@ -32,6 +32,8 @@ public class Main {
 
         publicacionDe("andrea garcía",listaPublicaciones);
 
+        //Faltan los comentarios
+
     }
 
     public static void publicacionDe(String nombre, ArrayList<Publicacion> listaPublicaciones) {
