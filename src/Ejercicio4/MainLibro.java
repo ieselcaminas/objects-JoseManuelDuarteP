@@ -23,9 +23,9 @@ public class MainLibro {
         libro2.addTemas(horror);
         libros.add(libro2);
 
-        for(Libro libro1: libros) {
-            System.out.println(libro1.getTitulo() + " - " + libro1.getAutor());
-            for(Tema tema: libro1.getTemas()) {
+        for(Libro l: libros) {
+            System.out.println(l.getTitulo() + " - " + l.getAutor());
+            for(Tema tema: l.getTemas()) {
                 System.out.println(tema);
             }
         }
