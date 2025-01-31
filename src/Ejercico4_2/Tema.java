@@ -1,4 +1,4 @@
-package Ejercicio4;
+package Ejercico4_2;
 
 public class Tema {
     private String nombre;
