@@ -4,11 +4,13 @@ public class Prestec {
     private int id;
     private int cantidad;
     private Cliente cliente;
+    private Sucursal sucursal;
 
-    public Prestec(int id, int cantidad, Cliente cliente) {
+    public Prestec(int id, int cantidad, Cliente cliente, Sucursal sucursal) {
         this.id = id;
         this.cantidad = cantidad;
         this.cliente = cliente;
+        this.sucursal = sucursal;
     }
 
     public int getId() {
@@ -29,6 +31,14 @@ public class Prestec {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public Sucursal getSucursal() {
+        return sucursal;
+    }
+
+    public void setSucursal(Sucursal sucursal) {
+        this.sucursal = sucursal;
     }
 
     @Override

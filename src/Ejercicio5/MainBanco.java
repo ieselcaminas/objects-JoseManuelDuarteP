@@ -10,8 +10,9 @@ public class MainBanco {
             bbva.addSucursal(sucursalBbva2);
 
             Cliente jose = new Cliente("3231F","Jose");
-            Prestec pJose = new Prestec(1,200,jose);
+            Prestec pJose = new Prestec(1,200,jose,sucursalBbva1);
             jose.addPrestec(pJose);
+            sucursalBbva1.addPrestec(pJose);
 
         Banco santandader = new Banco(2,"Santander");
             Sucursal sucursalSantandader1 = new Sucursal(1,"Bilbao",santandader);
@@ -19,8 +20,10 @@ public class MainBanco {
             Sucursal sucursalSantandader2 = new Sucursal(2,"Vigo",santandader);
             santandader.addSucursal(sucursalSantandader2);
 
-        bbva.getSucursales().stream().forEach(System.out::println);
+        bbva.getSucursales().forEach(System.out::println);
 
         jose.getPrestecs().forEach(System.out::println);
+
+        sucursalBbva1.getPrestecs().forEach(System.out::println);
     }
 }

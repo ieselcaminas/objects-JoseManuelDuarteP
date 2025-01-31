@@ -1,14 +1,18 @@
 package Ejercicio5;
 
+import java.util.ArrayList;
+
 public class Sucursal {
     private int id;
     private String localizacion;
     private Banco banco;
+    private ArrayList<Prestec> prestecs;
 
     public Sucursal(int id, String localizacion, Banco banco) {
         this.id = id;
         this.localizacion = localizacion;
         this.banco = banco;
+        this.prestecs = new ArrayList<>();
     }
 
     public int getId() {
@@ -29,6 +33,14 @@ public class Sucursal {
 
     public void setBanco(Banco banco) {
         this.banco = banco;
+    }
+
+    public ArrayList<Prestec> getPrestecs() {
+        return prestecs;
+    }
+
+    public void addPrestec(Prestec prestec) {
+        prestecs.add(prestec);
     }
 
     @Override
