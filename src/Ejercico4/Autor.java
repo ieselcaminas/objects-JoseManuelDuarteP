@@ -1,4 +1,4 @@
-package Ejercico4_2;
+package Ejercico4;
 
 public class Autor {
     private String nombre;
