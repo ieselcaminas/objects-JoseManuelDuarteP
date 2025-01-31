@@ -43,6 +43,6 @@ public class Prestec {
 
     @Override
     public String toString() {
-        return this.id + " - " + this.cantidad;
+        return "ID Préstamo: " + this.id + " - " + "Cantidad: " + this.cantidad;
     }
 }

@@ -7,12 +7,14 @@ public class Sucursal {
     private String localizacion;
     private Banco banco;
     private ArrayList<Prestec> prestecs;
+    private ArrayList<Cuenta> cuentas;
 
     public Sucursal(int id, String localizacion, Banco banco) {
         this.id = id;
         this.localizacion = localizacion;
         this.banco = banco;
         this.prestecs = new ArrayList<>();
+        this.cuentas = new ArrayList<>();
     }
 
     public int getId() {
@@ -43,8 +45,16 @@ public class Sucursal {
         prestecs.add(prestec);
     }
 
+    public ArrayList<Cuenta> getCuentas() {
+        return cuentas;
+    }
+
+    public void addCuenta(Cuenta cuenta) {
+        cuentas.add(cuenta);
+    }
+
     @Override
     public String toString() {
-        return this.id + " - " + this.localizacion;
+        return "ID Sucursal: " + this.id + " - " + "Lugar: " + this.localizacion;
     }
 }

@@ -35,6 +35,6 @@ public class Banco {
 
     @Override
     public String toString() {
-        return this.id + " - " + this.nombre;
+        return "ID Banco: " + this.id + " - " + "Nombre banco: " + this.nombre;
     }
 }
